@@ -4,7 +4,7 @@ const btnDecrypt = document.querySelector('#decrypt');
 const result = document.querySelector('#result');
 
 btnEncrypt.addEventListener('click', () => {
-    encrypt(input.value);
+    result.textContent = encrypt(input.value);
 });
 
 function encrypt(msg) {
