@@ -77,10 +77,12 @@ main {
     background-color: var(--color-3);
 }
 
-#result {
+#result, #copy {
+    position: relative;
     grid-area: d;
     background-color: var(--color-4);
     height: auto;
+    max-height: 50vh;
     margin: auto;
     border-radius: 10px;
     width: 80%;
@@ -88,8 +90,21 @@ main {
 }
 
 #result p {
-    text-align: center;
+    cursor: default;
     max-width: 85%;
+    text-align: center;
     word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
     margin: auto;
+    overflow: scroll;
+}
+
+#copy {
+    background-color: var(--color-2);
+    color: var(--color-4);
+    text-align: center;
+    width: 50%;
+    display: none;
+    opacity: .6;
 }
