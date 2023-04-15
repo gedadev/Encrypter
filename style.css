@@ -20,7 +20,10 @@ body {
 }
 
 main {
+    margin: 8vh auto;
+    width: 35vw;
     display: grid;
+    row-gap: 50px;
     grid-template:
         'a a'
         'b c'
@@ -29,6 +32,11 @@ main {
 
 #input {
     grid-area: a;
+}
+
+.btn {
+    margin: auto;
+    width: 50%;
 }
 
 #encrypt {
@@ -41,4 +49,6 @@ main {
 
 #result {
     grid-area: d;
+    background-color: var(--color-4);
+    height: 20vh;
 }
