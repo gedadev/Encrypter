@@ -2,13 +2,16 @@ const input = document.querySelector('#input');
 const btnEncrypt = document.querySelector('#encrypt');
 const btnDecrypt = document.querySelector('#decrypt');
 const result = document.querySelector('#result');
+const p = document.createElement('p');
 
 btnEncrypt.addEventListener('click', () => {
-    result.textContent = encrypt(input.value);
+    p.textContent = encrypt(input.value);
+    result.appendChild(p);
 });
 
 btnDecrypt.addEventListener('click', () => {
-    result.textContent = decrypt(input.value);
+    p.textContent = decrypt(input.value);
+    result.appendChild(p);
 });
 
 function encrypt(msg) {

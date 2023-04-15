@@ -65,5 +65,17 @@ main {
 #result {
     grid-area: d;
     background-color: var(--color-4);
-    height: 20vh;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    width: 80%;
+    padding: 20px 0;
+    box-shadow: 1px 1px 8px var(--color-2);
+}
+
+#result p {
+    text-align: center;
+    max-width: 85%;
+    word-wrap: break-word;
+    margin: auto;
 }
