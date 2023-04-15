@@ -40,14 +40,26 @@ main {
 .btn {
     margin: auto;
     width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    transition: all .2s;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 5px var(--color-2);
 }
 
 #encrypt {
     grid-area: b;
+    background-color: var(--color-2);
+    color: var(--color-4);
 }
 
 #decrypt {
     grid-area: c;
+    background-color: var(--color-3);
 }
 
 #result {
