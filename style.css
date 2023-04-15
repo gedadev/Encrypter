@@ -32,6 +32,9 @@ main {
 
 #input {
     grid-area: a;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 18px;
 }
 
 .btn {
