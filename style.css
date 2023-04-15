@@ -1,0 +1,44 @@
+:root {
+    --color-1: #F3F5FC;
+    --color-2: #0A3871;
+    --color-3: #D8DFE8;
+    --color-4: #FFFFFF;
+}
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-1);
+}
+
+main {
+    display: grid;
+    grid-template:
+        'a a'
+        'b c'
+        'd d' ;
+}
+
+#input {
+    grid-area: a;
+}
+
+#encrypt {
+    grid-area: b;
+}
+
+#decrypt {
+    grid-area: c;
+}
+
+#result {
+    grid-area: d;
+}
