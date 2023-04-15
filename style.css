@@ -19,6 +19,20 @@ body {
     background-color: var(--color-1);
 }
 
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--color-3);
+}
+
+h1 {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
 main {
     margin: 8vh auto;
     width: 35vw;
@@ -28,13 +42,14 @@ main {
         'a a'
         'b c'
         'd d' ;
-}
-
+    }
+    
 #input {
     grid-area: a;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 8px;
     font-size: 18px;
+    box-shadow: 1px 1px 3px var(--color-2);
 }
 
 .btn {
@@ -70,7 +85,6 @@ main {
     border-radius: 10px;
     width: 80%;
     padding: 20px 0;
-    box-shadow: 1px 1px 8px var(--color-2);
 }
 
 #result p {
