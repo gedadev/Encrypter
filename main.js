@@ -8,19 +8,27 @@ const p = document.createElement('p');
 btnEncrypt.addEventListener('click', () => {
     p.textContent = encrypt(input.value);
     result.appendChild(p);
+    input.placeholder = 'Enter message to encrypt';
 });
 
 btnDecrypt.addEventListener('click', () => {
     p.textContent = decrypt(input.value);
     result.appendChild(p);
+    input.placeholder = 'Enter message to encrypt';
 });
 
-result.addEventListener('mouseover', (e) => {
+btnCopy.addEventListener('click', () => {
+    navigator.clipboard.writeText(result.firstChild.textContent);
+    input.value = '';
+    input.placeholder = 'Right click or Ctrl + V to paste the message...';
+});
+
+result.addEventListener('mouseover', () => {
     if(result.firstChild.textContent !== '')
         btnCopy.style.display = 'block';
 });
 
-result.addEventListener('mouseout', (e) => {
+result.addEventListener('mouseout', () => {
     btnCopy.style.display = 'none';
 });
 
