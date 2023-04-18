@@ -41,8 +41,9 @@ main {
     grid-template:
         'a a'
         'b c'
-        'd d' ;
-    }
+        'd d'
+        'e e' ;
+}
     
 #input {
     grid-area: a;
@@ -77,7 +78,7 @@ main {
     background-color: var(--color-3);
 }
 
-#result, #copy {
+#result {
     position: relative;
     grid-area: d;
     background-color: var(--color-4);
@@ -86,7 +87,7 @@ main {
     margin: auto;
     border-radius: 10px;
     width: 80%;
-    padding: 20px 0;
+    padding: 14px 0;
 }
 
 #result p {
@@ -101,10 +102,23 @@ main {
 }
 
 #copy {
-    background-color: var(--color-2);
-    color: var(--color-4);
+    grid-area: e;
+    background-color: var(--color-1);
+    color: black;
     text-align: center;
-    width: 50%;
-    display: none;
+    width: 80%;
     opacity: .6;
+    margin: auto;
+    margin-top: -38px;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 90%;
+    }
+
+    #copy {
+        font-size: 12px;
+    }
 }

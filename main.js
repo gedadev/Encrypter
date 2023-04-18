@@ -17,19 +17,10 @@ btnDecrypt.addEventListener('click', () => {
     input.placeholder = 'Enter message to encrypt';
 });
 
-btnCopy.addEventListener('click', () => {
+result.addEventListener('click', () => {
     navigator.clipboard.writeText(result.firstChild.textContent);
     input.value = '';
     input.placeholder = 'Right click or Ctrl + V to paste the message...';
-});
-
-result.addEventListener('mouseover', () => {
-    if(result.firstChild.textContent !== '')
-        btnCopy.style.display = 'block';
-});
-
-result.addEventListener('mouseout', () => {
-    btnCopy.style.display = 'none';
 });
 
 function encrypt(msg) {
